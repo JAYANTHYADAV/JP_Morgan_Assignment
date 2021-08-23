@@ -33,7 +33,7 @@ class Stock:
         return csv_data
     
     def GetDividendYield(self, stock, market_price):
-        """Answers the exercise question 'i. Calculate the dividend yield'
+        """Calculate the dividend yield'
         """
         stock= self.stock_data[self.stock_data['Stock_Symbol'] == stock]
         if len(stock['Type']) != 1:
