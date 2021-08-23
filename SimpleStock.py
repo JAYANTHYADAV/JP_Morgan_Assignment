@@ -33,7 +33,7 @@ class Stock:
         return csv_data
     
     def GetDividendYield(self, stock, market_price):
-        """Calculate the dividend yield'
+        """Calculate the dividend yield.
         """
         stock= self.stock_data[self.stock_data['Stock_Symbol'] == stock]
         if len(stock['Type']) != 1:
@@ -56,7 +56,7 @@ class Stock:
     
     def RecordTrade(self, stock, quantity, sold, price):
         """Record a trade, with timestamp, quantity of
-        shares, buy or sell indicator and price'
+        shares, buy or sell indicator and price.
         
         Record the trade of the given stock and append it to the trade
         dataframe. 
@@ -84,7 +84,7 @@ class Stock:
 
     def GetStockPrice(self, stock, last_minutes= 15):
         """Calculate Stock Price based on trades
-        recorded in past 15 minutes'
+        recorded in past 15 minutes.
         
         Return the price of the given stock on the basis of the transactions
         recorded in the last `last_minutes`. Return NaN if no transactions are
@@ -109,7 +109,7 @@ class Stock:
 
     def GetAllShareIndex(self):
         """Calculate the GBCE All Share Index using the
-        geometric mean of prices for all stocks'
+        geometric mean of prices for all stocks.
         """
         if len(self.trade) == 0:
             return float('nan')
