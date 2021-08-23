@@ -1,4 +1,6 @@
 # JP_Morgan_Assignment
+This code is submitted as an solution to the assignment Super Simple Stocks included in the hiring process at J.P.Morgan. Its problem statement may be found in the document **document/Super_Simple_Stocks.pdf**.
+
 # Dependencies
 
 * Python 3.x
